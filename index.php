@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>PGD Krašce</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+<?php 
+include 'includes/header.php';
+?>
 
-</head>
-<body>
-
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+<h1>Pozdravljeni na straneh prostovoljnega gasilskega društva Krašce</h1>
+<h2>Sebi v ponos, bližnjemu v pomoč!</h2>
+<h3>Obvestila:</h3>
+<div class="obvestila">
+</div>
+<script type="text/javascript">
+	$.ajax({
+	  url: "php/obvestila.php",
+	  type: "GET"
+	}).done(function(res) {
+	  $(".obvestila").html(res);
+	});
+</script>
+<?php 
+include 'includes/footer.php';
+?>
