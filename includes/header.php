@@ -8,10 +8,8 @@
 		  src="https://code.jquery.com/jquery-3.2.1.min.js"
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
-			<?php 
-				include 'navbar.php';
-			?>
-			<div class="content">
+			
